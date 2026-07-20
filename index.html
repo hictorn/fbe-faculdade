@@ -735,8 +735,12 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
             <label>Curso *</label>
             <select name="curso" required>
               <option value="">Selecione um curso</option>
+              <option>Administração</option>
               <option>Direito</option>
               <option>Enfermagem</option>
+              <option>Engenharia Civil</option>
+              <option>Engenharia de Computação</option>
+              <option>Engenharia de Produção</option>
               <option>Odontologia</option>
               <option>Psicologia</option>
             </select>
@@ -876,29 +880,29 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
         <p>Estudo dos processos mentais e comportamentais humanos. Diagnóstico, prevenção e tratamento de distúrbios.</p>
         <a href="#" class="course-link js-open-curso" data-curso="psicologia">Saiba mais →</a>
       </div>
-      <div class="course-card course-card--unavailable">
-        <span class="course-badge course-badge--unavailable">Indisponível</span>
+      <div class="course-card">
+        <span class="course-badge course-badge--available">Disponível</span>
         <div class="course-type">Bacharelado</div>
         <h3>Administração</h3>
         <p>Gestão de recursos humanos, financeiros e materiais. Um dos cursos mais procurados do mercado.</p>
         <a href="#" class="course-link js-open-curso" data-curso="administracao">Saiba mais →</a>
       </div>
-      <div class="course-card course-card--unavailable">
-        <span class="course-badge course-badge--unavailable">Indisponível</span>
+      <div class="course-card">
+        <span class="course-badge course-badge--available">Disponível</span>
         <div class="course-type">Bacharelado</div>
         <h3>Engenharia Civil</h3>
         <p>Projete, gerencie e execute obras e construções. Duração de 5 anos com estágio obrigatório.</p>
         <a href="#" class="course-link js-open-curso" data-curso="eng-civil">Saiba mais →</a>
       </div>
-      <div class="course-card course-card--unavailable">
-        <span class="course-badge course-badge--unavailable">Indisponível</span>
+      <div class="course-card">
+        <span class="course-badge course-badge--available">Disponível</span>
         <div class="course-type">Bacharelado</div>
         <h3>Eng. de Produção</h3>
         <p>Formação multidisciplinar para gerenciar processos produtivos e aumentar a eficiência empresarial.</p>
         <a href="#" class="course-link js-open-curso" data-curso="eng-producao">Saiba mais →</a>
       </div>
-      <div class="course-card course-card--unavailable">
-        <span class="course-badge course-badge--unavailable">Indisponível</span>
+      <div class="course-card">
+        <span class="course-badge course-badge--available">Disponível</span>
         <div class="course-type">Bacharelado</div>
         <h3>Eng. de Computação</h3>
         <p>Hardware, software e sistemas computacionais. Preparação para os desafios tecnológicos atuais.</p>
@@ -1542,9 +1546,6 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
   <div class="course-layout">
     <div class="course-content">
 
-      <div class="course-unavailable-banner">
-        ⚠️ Este curso está temporariamente indisponível para novas matrículas. Preencha o formulário de contato para ser avisado quando as inscrições forem reabertas.
-      </div>
 
       <h2>Por que fazer Administração?</h2>
       <p>A Administração é uma das graduações mais versáteis do mercado, com atuação em praticamente todos os setores da economia. O profissional de Administração é essencial para a gestão eficiente de empresas, organizações e empreendimentos de qualquer porte.</p>
@@ -1604,23 +1605,29 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
           <div class="faq-answer">A média para administradores em início de carreira fica entre R$ 2.500 e R$ 4.000 mensais. Profissionais em cargos de gestão e com especializações podem alcançar de R$ 6.000 a R$ 8.000 ou mais.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">Quando o curso de Administração será reaberto?</button>
-          <div class="faq-answer">O curso está temporariamente indisponível. Preencha o formulário de contato para ser avisado assim que as inscrições forem reabertas.</div>
+          <button class="faq-question">Como faço para me matricular em Administração?</button>
+          <div class="faq-answer">Basta preencher o formulário de inscrição no site e realizar o pagamento da taxa de R$ 99,00. As aulas começam em 10 de agosto de 2026.</div>
         </div>
       </div>
 
     </div>
 
     <aside class="course-sidebar">
-      <div class="sidebar-card sidebar-card--unavailable">
-        <div class="sc-label">Curso Indisponível</div>
-        <div class="sc-title">Este curso não está aceitando novas matrículas no momento.</div>
-        <a href="#" class="sc-cta js-back-home" data-scroll="contato">Quero ser avisado →</a>
+      <div class="sidebar-card">
+        <div class="sc-label">Vestibular 2026.2</div>
+        <div class="sc-title">Matricule-se na graduação e comece a mudar o seu futuro!</div>
+        <div class="sc-price">
+          <div class="sc-price-from">Inscrição</div>
+          <div class="sc-price-value">R$ 99<span>,00</span></div>
+        </div>
+        <a href="#" class="sc-cta js-back-home" data-scroll="contato">Inscreva-se agora →</a>
         <ul class="sc-info">
+          <li><span class="ic">📅</span> Início: 10 de agosto de 2026</li>
           <li><span class="ic">👩‍🏫</span> Professores esp., mestres e doutores</li>
           <li><span class="ic">⏱️</span> Duração de 8 semestres (4 anos)</li>
           <li><span class="ic">✅</span> Autorizado pelo MEC</li>
           <li><span class="ic">🌙</span> Turno noturno</li>
+          <li><span class="ic">🎓</span> Bolsas de até 74%</li>
         </ul>
       </div>
     </aside>
@@ -1644,9 +1651,6 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
   <div class="course-layout">
     <div class="course-content">
 
-      <div class="course-unavailable-banner">
-        ⚠️ Este curso está temporariamente indisponível para novas matrículas. Preencha o formulário de contato para ser avisado quando as inscrições forem reabertas.
-      </div>
 
       <h2>Por que fazer Engenharia Civil?</h2>
       <p>A Engenharia Civil é uma das profissões mais tradicionais e demandadas do Brasil, essencial para o desenvolvimento urbano e de infraestrutura do país. O profissional atua no planejamento, projeto e execução de obras como edifícios, rodovias, pontes, barragens e sistemas de saneamento.</p>
@@ -1706,23 +1710,29 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
           <div class="faq-answer">A média para engenheiros civis em início de carreira fica entre R$ 4.000 e R$ 6.000 mensais. Profissionais seniores e especializados podem alcançar de R$ 10.000 a R$ 12.000 ou mais.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">Quando o curso de Engenharia Civil será reaberto?</button>
-          <div class="faq-answer">O curso está temporariamente indisponível. Preencha o formulário de contato para ser avisado assim que as inscrições forem reabertas.</div>
+          <button class="faq-question">Como faço para me matricular em Engenharia Civil?</button>
+          <div class="faq-answer">Basta preencher o formulário de inscrição no site e realizar o pagamento da taxa de R$ 99,00. As aulas começam em 10 de agosto de 2026.</div>
         </div>
       </div>
 
     </div>
 
     <aside class="course-sidebar">
-      <div class="sidebar-card sidebar-card--unavailable">
-        <div class="sc-label">Curso Indisponível</div>
-        <div class="sc-title">Este curso não está aceitando novas matrículas no momento.</div>
-        <a href="#" class="sc-cta js-back-home" data-scroll="contato">Quero ser avisado →</a>
+      <div class="sidebar-card">
+        <div class="sc-label">Vestibular 2026.2</div>
+        <div class="sc-title">Matricule-se na graduação e comece a mudar o seu futuro!</div>
+        <div class="sc-price">
+          <div class="sc-price-from">Inscrição</div>
+          <div class="sc-price-value">R$ 99<span>,00</span></div>
+        </div>
+        <a href="#" class="sc-cta js-back-home" data-scroll="contato">Inscreva-se agora →</a>
         <ul class="sc-info">
+          <li><span class="ic">📅</span> Início: 10 de agosto de 2026</li>
           <li><span class="ic">👩‍🏫</span> Professores esp., mestres e doutores</li>
           <li><span class="ic">⏱️</span> Duração de 10 semestres (5 anos)</li>
           <li><span class="ic">✅</span> Autorizado pelo MEC</li>
           <li><span class="ic">🌙</span> Turno noturno</li>
+          <li><span class="ic">🎓</span> Bolsas de até 74%</li>
         </ul>
       </div>
     </aside>
@@ -1746,9 +1756,6 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
   <div class="course-layout">
     <div class="course-content">
 
-      <div class="course-unavailable-banner">
-        ⚠️ Este curso está temporariamente indisponível para novas matrículas. Preencha o formulário de contato para ser avisado quando as inscrições forem reabertas.
-      </div>
 
       <h2>Por que fazer Engenharia de Produção?</h2>
       <p>A Engenharia de Produção é uma das engenharias mais versáteis, combinando conhecimentos técnicos com gestão empresarial. O profissional é capaz de atuar na interface entre a engenharia e a administração, otimizando processos e recursos.</p>
@@ -1808,23 +1815,29 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
           <div class="faq-answer">A média para engenheiros de produção em início de carreira fica entre R$ 4.000 e R$ 6.000 mensais. Profissionais seniores e especializados podem alcançar de R$ 9.000 a R$ 11.000 ou mais.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">Quando o curso de Engenharia de Produção será reaberto?</button>
-          <div class="faq-answer">O curso está temporariamente indisponível. Preencha o formulário de contato para ser avisado assim que as inscrições forem reabertas.</div>
+          <button class="faq-question">Como faço para me matricular em Engenharia de Produção?</button>
+          <div class="faq-answer">Basta preencher o formulário de inscrição no site e realizar o pagamento da taxa de R$ 99,00. As aulas começam em 10 de agosto de 2026.</div>
         </div>
       </div>
 
     </div>
 
     <aside class="course-sidebar">
-      <div class="sidebar-card sidebar-card--unavailable">
-        <div class="sc-label">Curso Indisponível</div>
-        <div class="sc-title">Este curso não está aceitando novas matrículas no momento.</div>
-        <a href="#" class="sc-cta js-back-home" data-scroll="contato">Quero ser avisado →</a>
+      <div class="sidebar-card">
+        <div class="sc-label">Vestibular 2026.2</div>
+        <div class="sc-title">Matricule-se na graduação e comece a mudar o seu futuro!</div>
+        <div class="sc-price">
+          <div class="sc-price-from">Inscrição</div>
+          <div class="sc-price-value">R$ 99<span>,00</span></div>
+        </div>
+        <a href="#" class="sc-cta js-back-home" data-scroll="contato">Inscreva-se agora →</a>
         <ul class="sc-info">
+          <li><span class="ic">📅</span> Início: 10 de agosto de 2026</li>
           <li><span class="ic">👩‍🏫</span> Professores esp., mestres e doutores</li>
           <li><span class="ic">⏱️</span> Duração de 10 semestres (5 anos)</li>
           <li><span class="ic">✅</span> Autorizado pelo MEC</li>
           <li><span class="ic">🌙</span> Turno noturno</li>
+          <li><span class="ic">🎓</span> Bolsas de até 74%</li>
         </ul>
       </div>
     </aside>
@@ -1848,9 +1861,6 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
   <div class="course-layout">
     <div class="course-content">
 
-      <div class="course-unavailable-banner">
-        ⚠️ Este curso está temporariamente indisponível para novas matrículas. Preencha o formulário de contato para ser avisado quando as inscrições forem reabertas.
-      </div>
 
       <h2>Por que fazer Engenharia de Computação?</h2>
       <p>A Engenharia de Computação é uma das áreas com maior crescimento e demanda no mercado de trabalho atual, unindo a base sólida da engenharia com as competências da ciência da computação. O profissional atua no desenvolvimento de sistemas embarcados, redes, inteligência artificial e automação.</p>
@@ -1910,23 +1920,29 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
           <div class="faq-answer">A média para engenheiros de computação em início de carreira fica entre R$ 5.000 e R$ 8.000 mensais. Profissionais seniores em áreas como IA e cibersegurança podem alcançar de R$ 12.000 a R$ 15.000 ou mais.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">Quando o curso de Engenharia de Computação será reaberto?</button>
-          <div class="faq-answer">O curso está temporariamente indisponível. Preencha o formulário de contato para ser avisado assim que as inscrições forem reabertas.</div>
+          <button class="faq-question">Como faço para me matricular em Engenharia de Computação?</button>
+          <div class="faq-answer">Basta preencher o formulário de inscrição no site e realizar o pagamento da taxa de R$ 99,00. As aulas começam em 10 de agosto de 2026.</div>
         </div>
       </div>
 
     </div>
 
     <aside class="course-sidebar">
-      <div class="sidebar-card sidebar-card--unavailable">
-        <div class="sc-label">Curso Indisponível</div>
-        <div class="sc-title">Este curso não está aceitando novas matrículas no momento.</div>
-        <a href="#" class="sc-cta js-back-home" data-scroll="contato">Quero ser avisado →</a>
+      <div class="sidebar-card">
+        <div class="sc-label">Vestibular 2026.2</div>
+        <div class="sc-title">Matricule-se na graduação e comece a mudar o seu futuro!</div>
+        <div class="sc-price">
+          <div class="sc-price-from">Inscrição</div>
+          <div class="sc-price-value">R$ 99<span>,00</span></div>
+        </div>
+        <a href="#" class="sc-cta js-back-home" data-scroll="contato">Inscreva-se agora →</a>
         <ul class="sc-info">
+          <li><span class="ic">📅</span> Início: 10 de agosto de 2026</li>
           <li><span class="ic">👩‍🏫</span> Professores esp., mestres e doutores</li>
           <li><span class="ic">⏱️</span> Duração de 10 semestres (5 anos)</li>
           <li><span class="ic">✅</span> Autorizado pelo MEC</li>
           <li><span class="ic">🌙</span> Turno noturno</li>
+          <li><span class="ic">🎓</span> Bolsas de até 74%</li>
         </ul>
       </div>
     </aside>
@@ -2140,7 +2156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
   }
-}); 
+});
 </script>
 </body>
 </html>
