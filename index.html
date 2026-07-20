@@ -94,7 +94,7 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
 .br-mobile { display: none; }
 .br-desktop { display: inline; }
 @media (max-width: 600px) {
-  .topbar-btn { font-size: 11.5px; padding: 10px 8px; }
+  .topbar-btn { font-size: 12.5px; padding: 16px 8px; }
 }
 
 /* ---------- Header ---------- */
@@ -487,7 +487,7 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
   /* Topbar: mesmos valores do Técnico (11.5px, padding 10px 8px) */
   .topbar .container { padding: 0; }
   .topbar-inner { flex-wrap: nowrap; }
-  .topbar-btn { font-size: 11.5px; padding: 10px 8px; letter-spacing: 0.01em; }
+  .topbar-btn { font-size: 12.5px; padding: 16px 8px; letter-spacing: 0.01em; }
   .tb-desktop { display: none; }
   .tb-mobile { display: inline; }
   .br-mobile { display: inline; }
@@ -573,7 +573,7 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
 
 /* Mobile pequeno (≤400px) */
 @media (max-width: 400px) {
-  .topbar-btn { font-size: 10.5px; padding: 10px 4px; gap: 6px; }
+  .topbar-btn { font-size: 11.5px; padding: 16px 4px; gap: 6px; }
   .topbar-btn .dot { display: none; }
   .hero-cta-row { flex-direction: column; }
   .hero-cta-row .btn { width: 100%; }
@@ -652,7 +652,7 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
   .traj-timeline { grid-template-columns: 1fr; gap: 40px; max-width: 440px; margin: 0 auto; }
   .traj-timeline::before {
     top: 24px; bottom: auto; left: 24px; right: auto; width: 2px;
-    height: calc(100% - 24px - 60px);
+    height: calc(100% - 24px - 80px);
     background: rgba(242,183,5,0.7);
   }
   .traj-step { text-align: left; padding-left: 68px; padding-right: 0; min-height: 48px; }
@@ -660,8 +660,6 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
   .traj-step h3 { padding-top: 2px; }
 }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>emailjs.init('qRBryErY3jpIZQthO');</script>
 </head>
 <body>
 
@@ -757,7 +755,11 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
               <option>Reingresso</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:4px">Enviar</button>
+          <label style="display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--text-light);margin-top:12px;cursor:pointer;line-height:1.4;">
+            <input type="checkbox" required style="margin-top:2px;flex-shrink:0;">
+            Eu autorizo que a Faculdade FBE utilize meus dados para me contactar.
+          </label>
+          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:12px">Enviar</button>
           <div class="hf-success" style="display:none;text-align:center;padding:12px;font-size:14px;color:#0EAF7C;margin-top:8px;">✅ Inscrição enviada! Entraremos em contato.</div>
         </form>
       </div>
@@ -848,7 +850,7 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Nossos cursos</span>
-      <h2>Graduações que<br class="br-mobile"> transformam carreiras</h2>
+      <h2>Graduações que transformam carreiras</h2>
       <p>8 cursos de graduação nas áreas de humanas, exatas e saúde, todos no turno noturno e com certificação do MEC.</p>
     </div>
     <div class="courses-grid">
@@ -917,7 +919,7 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Formas de ingresso</span>
-      <h2>Diversas maneiras de<br class="br-mobile"> entrar na FBE</h2>
+      <h2>Diversas maneiras de entrar na FBE</h2>
       <p>O ingresso na Faculdade FBE ocorre por meio de processo seletivo, com diferentes modalidades para atender todos os perfis.</p>
     </div>
     <div class="ingresso-grid">
@@ -944,13 +946,6 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
       <div class="ingresso-card">
         <h4>🏛️ Transferência por Lei</h4>
         <p>Para funcionários públicos e seus dependentes em caso de transferência ou remoção por necessidade de serviço.</p>
-      </div>
-    </div>
-    <div style="text-align:center; margin-top:48px;">
-      <p style="font-family:var(--font-display); font-weight:600; font-size:17px; color:var(--navy); margin-bottom:20px;">📥 Documentos do processo seletivo</p>
-      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
-        <a href="docs/Edital-FBE-2026.pdf" target="_blank" class="btn btn-primary" style="font-size:15px; padding:14px 28px; text-decoration:none;">📄 Edital 2026</a>
-        <a href="docs/Regulamento-FBE-2026.pdf" target="_blank" class="btn btn-primary" style="font-size:15px; padding:14px 28px; text-decoration:none;">📄 Regulamento 2026</a>
       </div>
     </div>
   </div>
@@ -1050,7 +1045,7 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
     <div class="section-head">
       <span class="eyebrow">Contato</span>
       <h2>Fale com a gente</h2>
-      <p>Preencha o formulário abaixo ou entre em contato por telefone, e-mail ou WhatsApp.</p>
+      <p>Preencha o formulário abaixo ou entre em<br class="br-mobile"> contato por telefone, e-mail ou WhatsApp.</p>
     </div>
     <div class="contact-grid">
       <div>
@@ -1089,21 +1084,25 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
             <label for="curso">Curso de interesse</label>
             <select id="curso" name="curso">
               <option value="">Selecione um curso</option>
-              <option>Direito</option>
-              <option>Psicologia</option>
               <option>Administração</option>
-              <option>Engenharia Civil</option>
-              <option>Engenharia de Produção</option>
-              <option>Engenharia de Computação</option>
-              <option>Odontologia</option>
+              <option>Direito</option>
               <option>Enfermagem</option>
+              <option>Engenharia Civil</option>
+              <option>Engenharia de Computação</option>
+              <option>Engenharia de Produção</option>
+              <option>Odontologia</option>
+              <option>Psicologia</option>
             </select>
           </div>
           <div class="form-row">
             <label for="mensagem">Mensagem</label>
             <textarea id="mensagem" name="mensagem" placeholder="Insira sua mensagem"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%">Enviar</button>
+          <label style="display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--text-light);margin-top:12px;cursor:pointer;line-height:1.4;">
+            <input type="checkbox" required style="margin-top:2px;flex-shrink:0;">
+            Eu autorizo que a Faculdade FBE utilize meus dados para me contactar.
+          </label>
+          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:12px">Enviar</button>
           <div class="form-success">✅ Mensagem enviada! Nossa equipe entrará em contato em breve.</div>
         </form>
       </div>
@@ -2109,27 +2108,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Formulário do hero (Inscrição Vestibular)
+  // Formulário do hero
   const heroForm = document.getElementById('hero-form');
   if (heroForm) {
     heroForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const btn = heroForm.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      btn.textContent = 'Enviando...';
-      emailjs.sendForm('service_n40ybhn', 'template_8yyue07', heroForm)
-        .then(() => {
-          heroForm.querySelector('.hf-success').style.display = 'block';
-          heroForm.reset();
-          btn.disabled = false;
-          btn.textContent = 'Enviar';
-          setTimeout(() => { heroForm.querySelector('.hf-success').style.display = 'none'; }, 5000);
-        })
-        .catch(() => {
-          alert('Erro ao enviar. Tente novamente.');
-          btn.disabled = false;
-          btn.textContent = 'Enviar';
-        });
+      heroForm.querySelector('.hf-success').style.display = 'block';
+      heroForm.reset();
+      setTimeout(() => { heroForm.querySelector('.hf-success').style.display = 'none'; }, 5000);
     });
   }
 
@@ -2138,22 +2124,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      btn.textContent = 'Enviando...';
-      emailjs.sendForm('service_n40ybhn', 'template_m6s9fwm', form)
-        .then(() => {
-          form.querySelector('.form-success').style.display = 'block';
-          form.reset();
-          btn.disabled = false;
-          btn.textContent = 'Enviar';
-          setTimeout(() => { form.querySelector('.form-success').style.display = 'none'; }, 5000);
-        })
-        .catch(() => {
-          alert('Erro ao enviar. Tente novamente.');
-          btn.disabled = false;
-          btn.textContent = 'Enviar';
-        });
+      form.querySelector('.form-success').style.display = 'block';
+      form.reset();
+      setTimeout(() => { form.querySelector('.form-success').style.display = 'none'; }, 5000);
     });
   }
 });
