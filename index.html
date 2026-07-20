@@ -660,6 +660,8 @@ h1,h2,h3,h4 { font-family: var(--font-display); color: var(--navy); line-height:
   .traj-step h3 { padding-top: 2px; }
 }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init('qRBryErY3jpIZQthO');</script>
 </head>
 <body>
 
@@ -2108,14 +2110,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Formulário do hero
+  // Formulário do hero (Inscrição Vestibular)
   const heroForm = document.getElementById('hero-form');
   if (heroForm) {
     heroForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      heroForm.querySelector('.hf-success').style.display = 'block';
-      heroForm.reset();
-      setTimeout(() => { heroForm.querySelector('.hf-success').style.display = 'none'; }, 5000);
+      const btn = heroForm.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Enviando...';
+      emailjs.sendForm('service_n40ybhn', 'template_8yyue07', heroForm)
+        .then(() => {
+          heroForm.querySelector('.hf-success').style.display = 'block';
+          heroForm.reset();
+          btn.disabled = false;
+          btn.textContent = 'Enviar';
+          setTimeout(() => { heroForm.querySelector('.hf-success').style.display = 'none'; }, 5000);
+        })
+        .catch(() => {
+          alert('Erro ao enviar. Tente novamente.');
+          btn.disabled = false;
+          btn.textContent = 'Enviar';
+        });
     });
   }
 
@@ -2124,9 +2139,22 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      form.querySelector('.form-success').style.display = 'block';
-      form.reset();
-      setTimeout(() => { form.querySelector('.form-success').style.display = 'none'; }, 5000);
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Enviando...';
+      emailjs.sendForm('service_n40ybhn', 'template_m6s9fwm', form)
+        .then(() => {
+          form.querySelector('.form-success').style.display = 'block';
+          form.reset();
+          btn.disabled = false;
+          btn.textContent = 'Enviar';
+          setTimeout(() => { form.querySelector('.form-success').style.display = 'none'; }, 5000);
+        })
+        .catch(() => {
+          alert('Erro ao enviar. Tente novamente.');
+          btn.disabled = false;
+          btn.textContent = 'Enviar';
+        });
     });
   }
 });
